@@ -1,0 +1,22 @@
+.box {
+  padding: 28px 24px 24px;
+}
+
+.title {
+  font-size: 1.45rem;
+  white-space: nowrap;
+}
+
+.patient {
+  margin-top: 8px;
+}
+
+.button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 11px 22px;
+}
+
+.transit {
+  cursor: default;
+}

@@ -1,0 +1,75 @@
+:root {
+  --red: #e11d48;
+  --gray: #6b7280;
+  --black: #111827;
+  --white: #ffffff;
+  --line: color-mix(in srgb, var(--gray) 22%, var(--white));
+  --radius: 10px;
+  --font-title: "Oswald", "Segoe UI", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  font: inherit;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--red);
+  color: var(--white);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.alert {
+  font-family: var(--font-title);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.red {
+  color: var(--red);
+}
+
+.muted {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.divider {
+  border-bottom: 1px solid var(--line);
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
